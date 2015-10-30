@@ -1,0 +1,15 @@
+- 
+- BFS
+    - Cooperative.  Factor in other robot's planned routes when generating a path
+- Have a state marker that we finished without running out of time
+    - If we detect we ran out of time, fall back to a cheaper strategy
+- When evenly matched and lower on health, flee
+    - Flee strategies
+        - Run towards closest high level friendly robot for protection
+        - Find the closest, largest area with empty space in it for ease of movement
+
+- If we have an enemy pinned into a spawn tile and the next turn is a spawn turn, take the hit and stay there so they die
+- If we're winning in the last 10 turns (after last spawn), run away and avoid getting attacked at all costs
+- Consider strategy A/B testing in-game
+- Have a zoning strategy. Assign bots to N E S W areas and have them mark enemies in those areas for kill in a list of closest / easiest
+    - Balance bots between zones as needed
